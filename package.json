@@ -1,17 +1,8 @@
 {
-  "name": "medusa-starter-default",
+  "name": "all4pets-server",
   "version": "0.0.1",
-  "description": "A starter for Medusa projects.",
-  "author": "Sebastian Rindom <skrindom@gmail.com>",
-  "license": "MIT",
-  "keywords": [
-    "sqlite",
-    "postgres",
-    "typescript",
-    "ecommerce",
-    "headless",
-    "medusa"
-  ],
+  "description": "The all4pets api server",
+  "author": "Simon Haines <sh@ines.dev>",
   "scripts": {
     "clean": "cross-env ./node_modules/.bin/rimraf dist",
     "build": "npm run build:server && npm run build:admin",
