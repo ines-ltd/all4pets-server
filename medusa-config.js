@@ -43,16 +43,6 @@ const plugins = [
     }
   },
   {
-    resolve: '@medusajs/admin',
-    /** @type {import('@medusajs/admin').PluginOptions} */
-    options: {
-      autoRebuild: false,
-      develop: {
-        open: process.env.OPEN_BROWSER !== 'false'
-      }
-    }
-  },
-  {
     resolve: `medusa-file-s3`,
     options: {
       s3_url: process.env.S3_URL,
