@@ -53,6 +53,17 @@ const plugins = [
       cache_control: process.env.S3_CACHE_CONTROL,
       download_file_duration: process.env.S3_DOWNLOAD_FILE_DURATION
     }
+  },
+  {
+    resolve: `medusa-payment-stripe`,
+    options: {
+      api_key:
+        process.env.STRIPE_API_KEY ||
+        'pk_live_51NuN6uF3qIOmmZ2lliNK6z86h7FwTBQctxwR9hP3x3XCPCH0zLnWC7VDQStsrC98wvpRsMhLHxuXd2XUevTO0ZBM00xNkC7o3f',
+      webhook_secret:
+        process.env.STRIPE_WEBHOOK_SECRET ||
+        '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'
+    }
   }
 ]
 
